@@ -11,7 +11,7 @@ func TestAuthorizationHeaderMissing(t *testing.T) {
 	got, err := GetAPIKey(wrongHeaders)
 
 	if got != "" {
-		t.Errorf("got: %q, want: %q", got, "")	
+		t.Errorf("got: %q, want: %q", got, "")
 	}
 
 	if err != ErrNoAuthHeaderIncluded {
